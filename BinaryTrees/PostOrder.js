@@ -70,3 +70,8 @@ var postorderTraversal = function(root)
 
     return result;
 };
+
+/**
+ * Equal to or fasther than 61.13% of Javascript submissions on LeetCode
+ * https://leetcode.com/submissions/detail/154713863/
+ */

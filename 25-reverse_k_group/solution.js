@@ -52,5 +52,5 @@ const solutionOne = (head, k) => {
  * @return {ListNode}
  */
 var reverseKGroup = function(head, k) {
-    return solutionOne(head, k)
+  return solutionOne(head, k)
 };

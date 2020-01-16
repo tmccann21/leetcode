@@ -37,7 +37,11 @@ const recursiveReverse = (head, k) => {
   sentinel.next = recursiveReverse(sentinel.next, k);
   return follower;
 }
-
+/*
+ * Time: O(n)
+ * Space: O(1)
+ * recursively reverse groups of k nodes in place
+ */
 const solutionOne = (head, k) => {
   return recursiveReverse(head, k);
 }

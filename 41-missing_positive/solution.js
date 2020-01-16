@@ -63,7 +63,3 @@ for (let i = 0; i < n; i++) {
 var firstMissingPositive = function(nums) {
   return solutionTwo(nums);  
 };
-
-console.log(firstMissingPositive([7,8,9,11,12]))
-console.log(firstMissingPositive([3,4,-1,1]))
-console.log(firstMissingPositive([1,2,0]))

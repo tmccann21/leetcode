@@ -25,7 +25,6 @@ const solutionOne = (nums) => {
   }
 
   n = real.length;
-  let sum = 0;
   for (let i = 1; i < n; i++) {
     if (!real[i])
       return i;
@@ -34,13 +33,37 @@ const solutionOne = (nums) => {
   return max + 1;
 }
 
+/*
+ * Time: O(n)
+ * Space: O(1)
+ */
+const solutionTwo = (nums) => {
+  let n = nums.length;
+  for (let i = 0; i < nums.length; i++) {
+    const ins = nums[i]-1;
+    if (ins >= 0 && ins < nums.length && nums[ins] != nums[i]) {
+      const temp = nums[ins];
+      nums[ins] = nums[i];
+      nums[i] = temp;
+      i--;
+    }
+}
+for (let i = 0; i < n; i++) {
+  if (nums[i] - 1 != i)
+    return i + 1;
+}
+
+  return n + 1;
+}
+
  /**
  * @param {number[]} nums
  * @return {number}
  */
 var firstMissingPositive = function(nums) {
-  return solutionOne(nums);  
+  return solutionTwo(nums);  
 };
 
-console.log(firstMissingPositive(
-  [7,8,9,11,12]))
+console.log(firstMissingPositive([7,8,9,11,12]))
+console.log(firstMissingPositive([3,4,-1,1]))
+console.log(firstMissingPositive([1,2,0]))

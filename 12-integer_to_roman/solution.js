@@ -116,6 +116,3 @@ const solutionOne = (num) => {
 var intToRoman = function(num) {
   return solutionOne(num);
 };
-
-console.log(solutionOne(1994));
-console.log(solutionOne(58));

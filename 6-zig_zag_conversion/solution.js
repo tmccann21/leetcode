@@ -40,6 +40,3 @@ const solutionOne = (s, numRows) => {
 var convert = function(s, numRows) {
   return solutionOne(s, numRows);
 };
-
-console.log(convert('PAYPALISHIRING', 3));
-const tgt = 'PAHNAPLSIIGYIR';
